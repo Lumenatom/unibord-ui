@@ -1,0 +1,11 @@
+/* assets/css/variables.css */
+
+/* Определяем цвета как CSS переменные */
+:root {
+  --primary-color: #f700ff;  /* Главный цвет */
+  --secondary-color: #ffed4a; /* Вторичный цвет */
+  --accent-color: #e3342f;    /* Акцентный цвет */
+  --neutral-color: #f5f5f5;   /* Нейтральный цвет */
+  --dark-color: #2d3748;      /* Темный цвет */
+  --light-color: #edf2f7;     /* Светлый цвет */
+}
