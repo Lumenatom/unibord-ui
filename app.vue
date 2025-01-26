@@ -21,7 +21,18 @@
 const colorMode = useColorMode()
 
 const toggleTheme = () => {
-  console.log("Current mode:", colorMode.preference) // Проверяем текущий режим
-  colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light' // Переключение темы
+  console.log("Current mode:", colorMode.preference)
+  colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'
 }
+onMounted(async () => {
+  const config = useRuntimeConfig()
+  const apiUrl = config.public.API_URL
+
+  try {
+    const response = await useFetch(`${apiUrl}/test`)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+  }
+})
+
 </script>

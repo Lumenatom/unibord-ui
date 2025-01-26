@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
@@ -7,20 +6,20 @@ export default defineNuxtConfig({
   ],
   css: ['assets/css/global.css'],
   colorMode: {
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'light', // fallback value if not system preference found
+    preference: 'system',
+    fallback: 'light',
     hid: 'nuxt-color-mode-script',
     globalName: '__NUXT_COLOR_MODE__',
     componentName: 'ColorScheme',
     classPrefix: '',
     classSuffix: '-mode',
-    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    storage: 'localStorage',
     storageKey: 'nuxt-color-mode'
   },
   tailwindcss: {
-    cssPath: '~/assets/css/global.css',  // Путь к глобальному файлу стилей
+    cssPath: '~/assets/css/global.css',
     config: {
-      darkMode: 'class',  // Включаем поддержку темной темы через класс
+      darkMode: 'class',
     },
   },
   shadcn: {
