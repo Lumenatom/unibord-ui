@@ -1,11 +1,13 @@
 <template>
-  <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+<!--  <AppHeader/>-->
+  <div class="bg-customLightGray dark:bg-customBlack">
     <NuxtPage />
   </div>
 </template>
 
 <script setup>
 // Если нужно, добавь дополнительные скрипты или данные
+import AppHeader from "~/components/header/AppHeader.vue";
 </script>
 
 <style scoped>

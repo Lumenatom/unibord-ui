@@ -8,12 +8,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary_color: 'var(--primary-color)',
-        secondary_color: 'var(--secondary-color)',
+        customGray: 'var(--gray)',
+        customBlack: 'var(--black)',
+        customLightGray: 'var(--light-gray)',
         lightBg: '#ffffff',
         darkBg: '#121212',
+      },
+      borderRadius:{
+        base :'5px'
       }
     },
   },
   plugins: [animate],
 }
+// --white: #FFFFFF;
+// --light-gray: #E9E9EB;
+// --black: #010003;
+// --dark: #333335;
+// --gray: #7D7D7D;
+// --light-dark: #C7C7C7;
+// --blue: #3D6198;
+// --dark-blue: #43506C;
+// --coral: #EF484C;
+// --orange: #FC652B;
