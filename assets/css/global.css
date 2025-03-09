@@ -1,6 +1,16 @@
-@import './variables.css';
+@import './variables/colors.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html.dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
